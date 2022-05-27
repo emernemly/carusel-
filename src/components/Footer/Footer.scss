@@ -8,6 +8,7 @@ footer {
   position: relative;
   justify-content: center;
   padding: 0 50;
+  flex-wrap: wrap;
 
   .footer-1 {
     position: relative;
@@ -16,6 +17,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     div {
       max-width: 600px;
       margin-left: auto;
@@ -47,7 +49,6 @@ footer {
         color: #afafaf;
         margin: 12px;
         font-size: 19px;
-        font-family: sans-serif;
       }
       a:hover {
         color: #bb2431;
@@ -89,8 +90,25 @@ footer {
         width: 100%;
       }
     }
+    .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 15px;
+      svg {
+        width: 30px;
+        margin: 0 12px;
+      }
+      .facebook {
+        svg {
+          width: 22px !important;
+        }
+      }
+    }
   }
 }
+
 footer::after {
   content: '';
   background-image: url('../../assets/img/architectural_background_footer.png');

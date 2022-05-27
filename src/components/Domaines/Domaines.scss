@@ -1,0 +1,70 @@
+.domaine {
+  display: flex !important;
+  width: 350px !important;
+  height: 550px;
+  position: relative;
+  flex-direction: column !important;
+  box-shadow: 14px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 15px !important;
+  margin-bottom: 30px;
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  .card-img {
+    pointer-events: none;
+  }
+  .card-text {
+    color: #4a4848;
+  }
+}
+
+.all_carousel {
+  margin-bottom: 50px;
+  .rec-arrow:hover,
+  .rec-arrow:focus {
+    background: #d5d5d5 !important;
+    color: white;
+  }
+  .rec-carousel-wrapper {
+    max-width: 1300px;
+    margin: auto;
+  }
+  .title {
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: #bc2431;
+      text-align: center;
+      margin: auto;
+      height: 150px;
+      width: 100%;
+      font-size: 50px;
+      padding-bottom: 22px;
+    }
+    .svg {
+      svg {
+        margin-bottom: 60px !important;
+      }
+    }
+    svg {
+      width: 40px;
+      margin: 40px 5px 0 0;
+    }
+  }
+}
+
+// .rec-arrow:disabled,
+// .rec-arrow[disabled] {
+//   display: none;
+// }

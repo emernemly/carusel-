@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Oswald:wght@500&display=swap');
+
+@font-face {
+  font-family: 'nexa_bold';
+  src: local('nexa_bold'), url(./assets/fonts/Nexa-Bold.woff) format('woff');
+}
 body {
-  overflow: overlay;
+  // overflow: overlay;
+  font-family: 'nexa_bold' !important;
 }
 p,
 h1,
@@ -63,5 +69,5 @@ button:active {
 
 //fixing footer
 .content-app {
-  height: 100vh;
+  min-height: 100vh;
 }

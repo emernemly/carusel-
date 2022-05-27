@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import LogoWhite from '../../assets/img/logo_agexis_blanc.png';
 import LogoBlue from '../../assets/img/logo_agexis.jpg';
 import phone from '../../assets/icons/phone.jpg';
@@ -23,11 +23,13 @@ function _Nav() {
     <div className='header'>
       <div className='header-top'>
         {/* <div className='background'></div> */}
-        <img
-          className='logo-original'
-          src={LogoBlue}
-          alt='Logo agexis bureau etude france'
-        />
+        <Link to='/'>
+          <img
+            className='logo-original'
+            src={LogoBlue}
+            alt='Logo agexis bureau etude france'
+          />
+        </Link>
         <div className='contact'>
           <div className='contact-icon phone'>
             <img src={phone} alt='phone' />
