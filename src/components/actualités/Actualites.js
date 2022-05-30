@@ -1,0 +1,62 @@
+import React from 'react';
+import './Actualites.scss';
+import CardActualites from './CardActualites';
+import actualité_pic_a from './../../assets/img/actualité_pic_a.png';
+import actualité_pic_b from './../../assets/img/actualité_pic_b.png';
+import actualité_pic_c from './../../assets/img/actualité_pic_c.png';
+import { ReactComponent as CadreUp } from '../../assets/icons/cadre_up.svg';
+import Carousel from 'react-elastic-carousel';
+const Actualites = () => {
+  const data = [
+    {
+      img: actualité_pic_c,
+      title: "La maison de demain : comment l'imaginer ?",
+      description: `La maison de demain se profile peu. Certains
+            la présentent comme hyper-connectée, ultra-sécurisée,
+            écologique,et intelligent.`,
+      date: '5 janivier 2022',
+    },
+    {
+      img: actualité_pic_b,
+      title: 'Les technologies qui transorment le secteur du BTP?',
+      description: `Malgré les prouesses technologiques de ces trois derniéres
+        décennies.ldes travaux publics prend encore du retarden termes d'adoption des nouvelles technologies`,
+      date: '21 Mars 2022',
+    },
+    {
+      img: actualité_pic_a,
+      title: 'Tout ce dont il faut savoir sur le béton cellulaire',
+      description: `Le béton cellulaire est commercialisé pour la premiére fois en 1929 sous la marque Ytong.
+        Le matériau connait alors une expansion rapide dans tout l'europe`,
+      date: '15 Mai 2022',
+    },
+  ];
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 900, itemsToShow: 2 },
+    { width: 1200, itemsToShow: 3 },
+  ];
+  return (
+    <div className='actualites'>
+      <div className='subtitle'>
+        {' '}
+        <h3>
+          Actualités <CadreUp />
+        </h3>
+      </div>
+      <Carousel
+        breakPoints={breakPoints}
+        showArrows={true}
+        pagination={false}
+        itemsToShow={3}
+      >
+        {data.map((el, i) => (
+          <CardActualites key={i} el={el} />
+        ))}
+      </Carousel>
+    </div>
+  );
+};
+
+export default Actualites;

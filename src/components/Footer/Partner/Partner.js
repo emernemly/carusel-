@@ -10,7 +10,7 @@ import Carousel from 'react-elastic-carousel';
 const Partner = () => {
   return (
     <div className='partner'>
-      <Carousel showArrows={false} pagination={false} itemsToShow={4}>
+      <Carousel showArrows={false} pagination={false} itemsToShow={3}>
         <div className='partner-item'>
           <Paris />
         </div>

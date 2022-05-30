@@ -7,13 +7,10 @@ import { ReactComponent as LinkidinF } from '../../assets/icons/linkidin_icone_b
 import './Footer.scss';
 import LogoWhite from '../../assets/img/logo_agexis_blanc.png';
 import Coordonnées from './Coordonnees/Coordonnées';
-import Partner from './Partner/Partner';
-import Devis from '../Devis/Devis';
+
 const Footer = () => {
   return (
     <>
-      <Devis />
-      <Partner />
       <Coordonnées />
       <footer>
         <div className='footer-1'>

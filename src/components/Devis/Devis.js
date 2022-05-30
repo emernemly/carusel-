@@ -20,7 +20,7 @@ const Devis = () => {
             <input type='text' className='prenom' placeholder='Prénom' />
           </div>
           <input type='text' placeholder='Email' />
-          <input type='text' placeholder='Sujet' />
+          <textarea type='text' placeholder='Sujet' />
           <button className='second-btn'>Envoyer le Message</button>
         </div>
       </div>

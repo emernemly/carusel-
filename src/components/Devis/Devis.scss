@@ -57,6 +57,17 @@
         margin-bottom: 15px;
         height: 60px;
       }
+      textarea {
+        width: 100%;
+        background: white;
+        color: grey;
+        border: none;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        // height: 60px;
+        outline: none;
+      }
       .Np {
         width: 100%;
         display: flex;

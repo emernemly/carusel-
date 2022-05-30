@@ -6,32 +6,81 @@ import { ReactComponent as CadreUp } from '../../assets/icons/cadre_up.svg';
 import batiment_habitation from '../../assets/img/batiment_habitation.png';
 import batiment_fonctionelle from '../../assets/img/batiment_fonctionelle.png';
 import batiment_industruelle from '../../assets/img/batiment_industruelle.png';
+
 import Carousel from 'react-elastic-carousel';
 const Domaines = () => {
   const domaines = [
     {
       image: batiment_habitation,
       title: "Batiments d'habitation",
-      description:
-        "Conception, construction ou réhabilitation de batiments d'habitation maisons individuelles neuves,logements collectifs et sociaux",
+      description: (
+        <div className='choix'>
+          <ul>
+            <li> Maisons individuelles</li>
+            <li>Appartements Bâtiments</li>
+            <li> d’habitation collectifs</li>
+            <li> Logements sociaux</li>
+          </ul>
+        </div>
+      ),
     },
     {
       image: batiment_fonctionelle,
       title: 'Batiments fonctionelle',
-      description:
-        "Construction et réhabilitation d'ouvrages fonctionnels : scolaires, culturels, sportifs et établissements hospitaliers et hoteliers",
+      description: (
+        <div className='choix'>
+          <ul>
+            <li> Immeubles Grande Hauteur (IGH) et immeubles de Très</li>
+            <li> Grande Hauteur (ITGHI)</li>
+            <li> Bâtiments administratifs</li>
+            <li>Bâtiments d’enseignement...</li>
+          </ul>
+        </div>
+      ),
     },
     {
       image: batiment_industruelle,
       title: 'Batiments industruelle',
-      description:
-        "Construction et réhabilitation d'ouvrages fonctionnels : scolaires, culturels, sportifs et établissements hospitaliers et hoteliers",
+      description: (
+        <div className='choix'>
+          <ul>
+            <li> Unités de stockage</li>
+            <li>
+              {' '}
+              Bâtiments industriels / Locaux techniques usines, stations
+              <br />
+              d’épuration, entrepôts et hangars
+            </li>
+            <li> Centres d’exploitation routière</li>
+            <li>
+              {' '}
+              Centres de secours, déchetterie…
+              <br /> Bureaux Restauration / Hôtellerie / Centres de vacances
+            </li>
+          </ul>
+        </div>
+      ),
     },
     {
       image: batiment_industruelle,
-      title: 'Batiments industruelle',
-      description:
-        "Construction et réhabilitation d'ouvrages fonctionnels : scolaires, culturels, sportifs et établissements hospitaliers et hoteliers",
+      title: 'INFRASTRUCTURES, OUVRAGES D’ART, ET VRD',
+      description: (
+        <div className='choix'>
+          <ul>
+            <li> Unités de stockage</li>
+            <li>
+              Bâtiments industriels / Locaux techniques usines, stations
+              d’épuration, entrepôts et hangars
+            </li>
+            <li> Centres d’exploitation routière</li>
+            <li>
+              {' '}
+              Centres de secours, déchetterie… Bureaux Restauration / Hôtellerie
+              / Centres de vacances
+            </li>
+          </ul>
+        </div>
+      ),
     },
   ];
   return (
@@ -42,7 +91,7 @@ const Domaines = () => {
           DOMAINES D'INTERVENTIONS
           <div className='svg'>
             {' '}
-            <CadreUp className='up' />
+            <CadreUp />
           </div>
         </h2>
       </div>

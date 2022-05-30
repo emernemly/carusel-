@@ -15,7 +15,7 @@ function Slider() {
             <br />
             de la construction
           </h2>
-          <button className='primary-btn'>Lire la suite</button>
+          <button className='primary-btn'>Devis online</button>
         </div>
       </Carousel.Item>
       {/* <Carousel.Item className='carousel-slider slider-2'>
