@@ -83,6 +83,11 @@ const Domaines = () => {
       ),
     },
   ];
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 900, itemsToShow: 2 },
+    { width: 1200, itemsToShow: 3 },
+  ];
   return (
     <div className='all_carousel'>
       <div className='title'>
@@ -95,7 +100,12 @@ const Domaines = () => {
           </div>
         </h2>
       </div>
-      <Carousel showArrows={true} pagination={false} itemsToShow={3}>
+      <Carousel
+        showArrows={true}
+        pagination={false}
+        itemsToShow={3}
+        breakPoints={breakPoints}
+      >
         {domaines.map((domaine, index) => (
           <CardDomaine key={index} domaine={domaine} />
         ))}

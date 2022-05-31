@@ -85,6 +85,7 @@ function App() {
           <Route path='/BIM' element={VerifAuth(<BIM />)} />
         </Routes>
       </div>
+
       <Footer />
     </div>
   );

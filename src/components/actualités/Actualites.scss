@@ -9,24 +9,24 @@
     color: white;
   }
   .rec-carousel-wrapper {
-    max-width: 1600px;
+    max-width: 1400px;
     margin: auto;
   }
 
   .Actualites-contant {
     display: flex !important;
-    width: 450px !important;
-    height: 510px;
+    width: 380px !important;
+    height: 480px;
     flex-direction: column !important;
     margin-bottom: 30px;
-    margin: 20px !important;
+    margin: 10px !important;
     .card-img {
       pointer-events: none;
-      cursor: pointer;
     }
     .card-title:hover {
       -webkit-text-decoration-line: underline; /* Safari */
       text-decoration-line: underline;
+      cursor: pointer;
     }
     .info {
       position: absolute;
@@ -35,6 +35,16 @@
       width: 90%;
       bottom: 1%;
       color: #4a4848;
+      .date {
+        display: inline;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        svg {
+          display: inline;
+          width: 33px;
+        }
+      }
       a {
         text-decoration: none;
         color: #232d49;
@@ -64,7 +74,7 @@
   h3 {
     color: #bc2431;
     text-align: center;
-    margin-left: 10%;
+    margin-left: 14%;
     font-size: 35px;
     padding-bottom: 22px;
     svg {

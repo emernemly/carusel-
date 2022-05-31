@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardImg } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { BiCalendar } from 'react-icons/bi';
 const CardActualites = ({ el }) => {
   return (
     <div>
@@ -12,7 +13,11 @@ const CardActualites = ({ el }) => {
           </Card.Title>
           <Card.Text>{el.description}</Card.Text>
           <div className='info'>
-            {el.date}
+            <div className='date'>
+              {' '}
+              <BiCalendar /> {el.date}
+            </div>
+
             <Link to='/'>Lire la suite {'>'}</Link>
           </div>
         </Card.Body>
