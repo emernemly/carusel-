@@ -6,7 +6,7 @@ import Demarche from '../../components/demarche/Demarche';
 import Devis from '../../components/Devis/Devis';
 import Domaines from '../../components/Domaines/Domaines';
 import Expertise from '../../components/expertise/Expertise';
-import Partner from '../../components/Footer/Partner/Partner';
+import Partner from '../../components/Partner/Partner';
 import References from '../../components/references/References';
 import Slider from '../../components/Slider/Slider';
 import './Home.scss';

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Domaines.scss';
 import CardDomaine from './CardDomaine';
-import { ReactComponent as CadreDown } from '../../assets/icons/cadre_down.svg';
 import { ReactComponent as CadreUp } from '../../assets/icons/cadre_up.svg';
 import batiment_habitation from '../../assets/img/batiment_habitation.png';
 import batiment_fonctionelle from '../../assets/img/batiment_fonctionelle.png';
@@ -92,7 +91,6 @@ const Domaines = () => {
     <div className='all_carousel'>
       <div className='title'>
         <h2>
-          <CadreDown />
           DOMAINES D'INTERVENTIONS
           <div className='svg'>
             {' '}

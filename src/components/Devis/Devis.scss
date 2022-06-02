@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+
     .discription {
       position: relative;
       z-index: 10;
@@ -96,4 +97,36 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: left;
+}
+@media screen and (max-width: 638px) {
+  .Devis {
+    clip-path: none;
+    height: max-content;
+    div {
+      flex-direction: column;
+      .discription {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        /* margin: auto; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 50px;
+        margin-top: 40px;
+        padding-left: 10%;
+      }
+      .form {
+        width: 100%;
+        .Np {
+          .nom {
+            margin: 12px;
+          }
+        }
+        button {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
 }

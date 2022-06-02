@@ -16,7 +16,7 @@ const Devis = () => {
         </div>
         <div className='form'>
           <div className='Np'>
-            <input type='text' placeholder='Nom' />
+            <input type='text' className='nom' placeholder='Nom' />
             <input type='text' className='prenom' placeholder='Prénom' />
           </div>
           <input type='text' placeholder='Email' />

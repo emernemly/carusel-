@@ -27,6 +27,11 @@
   }
   .card-text {
     color: #4a4848;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     li {
       margin: 9px 0;
       list-style: circle;
@@ -49,12 +54,11 @@
   .title {
     h2 {
       display: flex;
-      justify-content: center;
       color: #bc2431;
       text-align: center;
-      margin: auto;
+      margin-left: 13%;
       height: 150px;
-      width: 100%;
+
       font-size: 35px;
       padding-bottom: 22px;
     }
@@ -70,6 +74,63 @@
   }
 }
 
+@media screen and (max-width: 1012px) {
+  .all_carousel {
+    .rec-carousel-wrapper {
+      max-width: 589px;
+      margin: auto;
+    }
+    .title {
+      h2 {
+        margin: 0 10%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 638px) {
+  .all_carousel {
+    .title {
+      h2 {
+        width: 341px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .domaine {
+    width: 260px !important;
+    height: 542px;
+    button {
+      width: 170px;
+    }
+  }
+  .all_carousel {
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      h2 {
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+    .rec-arrow {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .domaine {
+    width: 195px !important;
+    height: 447px;
+    .card-text {
+      font-size: 12px;
+    }
+    button {
+      font-size: 10px;
+      width: 100px;
+    }
+  }
+}
 // .rec-arrow:disabled,
 // .rec-arrow[disabled] {
 //   display: none;

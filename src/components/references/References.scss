@@ -1,13 +1,24 @@
 .references {
-  height: 1142px;
+  height: 1213px;
   width: 100%;
   background-image: url('./../../assets/img/batiment_infrastructure@3x.png');
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2 {
       color: #bc2431;
+      width: 70%;
+      margin: 4% 10%;
+      font-size: 40px;
+      svg {
+        width: 30px;
+        transform: translateY(-35%);
+      }
     }
     .rec-arrow:hover,
     .rec-arrow:focus {
@@ -23,13 +34,25 @@
       margin: auto;
     }
     .rec-carousel-item-hidden {
-      // opacity: 0.523;
-      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(100%);
-      padding: 35px 0;
-      z-index: 0;
-      position: relative;
+      img {
+        width: 550px !important;
+        transition-duration: 0.5s;
+      }
+
       transition-duration: 0.5s;
+      opacity: 0;
+      z-index: 0;
+    }
+
+    .rec-carousel-item-next {
+      transform: translateX(-25%) scale(0.8) !important;
+      opacity: 0.5;
+      z-index: 0;
+    }
+    .rec-carousel-item-prev {
+      opacity: 0.5;
+      z-index: 0;
+      transform: translateX(25%) scale(0.8) !important;
     }
     .rec-arrow {
       z-index: 10;
@@ -40,38 +63,41 @@
       position: relative;
       width: 100%;
       z-index: 10;
-      //box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
+      border-radius: 150px;
       transition-duration: 0.5s;
+      img {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      }
     }
     .rec-item-wrapper {
-      border-radius: 10px;
-      opacity: 1;
+      border-radius: 33px;
     }
     img {
       width: 550px !important;
-      height: 300px;
+      height: 315px;
       pointer-events: none;
-      border-radius: 10px;
+      border-radius: 47px;
     }
-    .x {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transform: translateY(-200%);
-      z-index: 20;
-      color: white;
+    .reférence_b {
       position: relative;
-      button {
-        height: 39px;
-        width: 163px;
+      .adress {
         display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin-left: -50px;
-        margin-top: 9px;
+        flex-direction: column;
+        margin-left: 35px;
+        transform: translateY(-150%);
+        z-index: 20;
+        color: white;
+        position: absolute;
+        button {
+          height: 39px;
+          width: 163px;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          margin-top: 9px;
+        }
       }
     }
   }
@@ -97,6 +123,59 @@
     p {
       color: #615e5e;
       font-size: 23px;
+    }
+  }
+}
+@media screen and (max-width: 914px) {
+  .references {
+    .images {
+      .hHJTFD {
+        overflow: hidden !important ;
+      }
+    }
+    .references-contant {
+      display: flex;
+      flex-direction: column;
+      margin: 1% 16%;
+      width: 78%;
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: #bc2431;
+      width: 70%;
+      margin: 8%;
+      font-size: 40px;
+    }
+  }
+}
+@media screen and (max-width: 638px) {
+  .references {
+    .images {
+      .rec-carousel-item-hidden {
+        img {
+          width: 550px !important;
+          transition-duration: 0.5s;
+        }
+      }
+      img {
+        width: 350px;
+      }
+      .reférence_b {
+        .adress {
+          margin-left: 140px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .references {
+    .rec-arrow {
+      display: none;
+    }
+    .references-contant {
+      margin-top: 40px;
     }
   }
 }

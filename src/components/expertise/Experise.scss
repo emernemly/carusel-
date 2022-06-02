@@ -49,7 +49,6 @@
   .expertise {
     width: 50%;
     margin-left: 50px;
-    padding: 0 50px;
   }
   .discreption {
     .title {
@@ -111,5 +110,75 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1124px) {
+  .container_expertise {
+    .images {
+      width: 100%;
+    }
+    position: relative;
+    width: 100%;
+    margin-bottom: 55px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .expertise {
+      margin: 50px;
+      display: flex;
+
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 638px) {
+  .container_expertise {
+    padding: 12px 0;
+    .expertise {
+      margin: 52px 0 0 0;
+      .discreption {
+        margin-left: 12px;
+      }
+    }
+    .type-expetise {
+      .type {
+        .svg-content {
+          min-width: 88px;
+          svg {
+            width: 55px;
+          }
+        }
+      }
+    }
+    .images {
+      display: none;
+    }
+  }
+  .svg-fonc {
+    svg {
+      width: 50px !important;
+    }
+  }
+}
+@media screen and (max-width: 499px) {
+  .container_expertise {
+    .expertise {
+      margin-left: 5px;
+    }
+    padding: 0;
+  }
+  .Num {
+    width: 95px;
+    height: 110px;
+    background-color: #1c2c4e;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+  }
 }

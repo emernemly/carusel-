@@ -9,28 +9,33 @@ import Carousel from 'react-elastic-carousel';
 const References = () => {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 900, itemsToShow: 2 },
+    { width: 900, itemsToShow: 1 },
     { width: 1200, itemsToShow: 3 },
   ];
   return (
     <div className='references'>
       <div className='images'>
-        <h2> Réferences</h2>
+        <h2>
+          {' '}
+          Réferences <CadreUp />
+        </h2>
         <Carousel
-          itemPadding={[10, 0]}
           showArrows={true}
           pagination={false}
           itemsToShow={3}
           breakPoints={breakPoints}
+          initialActiveIndex={1}
         >
           <img src={reférence_c} alt='reférence_a' />
-          <img src={reférence_a} alt='reférence_b' />
+          <div className='reférence_b'>
+            <img src={reférence_a} alt='reférence_b' />
+            <div className='adress'>
+              <h4>337 logements - Versailles</h4>
+              <button className='second-btn'>Lire la suite {' >'}</button>
+            </div>
+          </div>
           <img src={reférence_b} alt='reférence_c' />
         </Carousel>
-        <div className='x'>
-          <h4>337 logements - Versailles</h4>
-          <button className='second-btn'>Lire la suite {' >'}</button>
-        </div>
       </div>
       <div className='references-contant'>
         <div className='title'>
