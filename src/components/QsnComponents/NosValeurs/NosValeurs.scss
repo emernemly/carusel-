@@ -1,0 +1,43 @@
+.NosValeurs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  .NosValeurs-contant {
+    display: flex;
+    .image {
+      display: flex;
+      align-items: center;
+      img {
+        width: 750px;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .valeur-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 71px;
+    .description {
+      h2 {
+        color: #bb2431;
+        font-size: 50px;
+        padding-bottom: 10px;
+      }
+      width: 60%;
+      p {
+        font-size: 20px;
+        display: block;
+        color: #969393;
+      }
+    }
+    img {
+      margin-top: 30px;
+      width: 573px;
+      pointer-events: none;
+    }
+  }
+}

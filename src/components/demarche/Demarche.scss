@@ -162,3 +162,25 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .demarche {
+    .left-demarche {
+      .title {
+        h3 {
+          text-align: center;
+          svg {
+            display: none;
+          }
+        }
+      }
+    }
+    .all-demarche {
+      .demarche-description {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

@@ -136,7 +136,7 @@
     .references-contant {
       display: flex;
       flex-direction: column;
-      margin: 1% 16%;
+
       width: 78%;
     }
     h2 {
@@ -176,6 +176,23 @@
     }
     .references-contant {
       margin-top: 40px;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .references {
+    .references-contant {
+      p {
+        font-size: 18px;
+      }
+      .title {
+        h3 {
+          font-size: 33px;
+        }
+        h4 {
+          font-size: 23px;
+        }
+      }
     }
   }
 }

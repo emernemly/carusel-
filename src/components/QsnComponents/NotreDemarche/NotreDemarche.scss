@@ -1,0 +1,52 @@
+.NotreDemarche {
+  margin: 30px 0;
+  display: flex;
+  background-color: rgba(221, 224, 229, 0.2);
+  .NotreDemarche-contant {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+
+    .contant {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 0 5;
+      .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        h2 {
+          color: #bb2431;
+          font-size: 50px;
+          padding-bottom: 10px;
+        }
+        p {
+          font-size: 20px;
+          display: block;
+          color: #969393;
+          padding-bottom: 15px;
+        }
+      }
+      ul {
+        color: #535252;
+        width: 55%;
+        li {
+          font-size: 20px;
+          margin: 0 0 12px 0;
+        }
+      }
+    }
+    .image {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      img {
+        width: 700px;
+        pointer-events: none;
+      }
+    }
+  }
+}

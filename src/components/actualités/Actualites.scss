@@ -90,3 +90,15 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .actualites {
+    .Actualites-contant {
+      width: 248px !important;
+      height: 409px;
+    }
+    .rec-arrow {
+      display: none;
+    }
+  }
+}

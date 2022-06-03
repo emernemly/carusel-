@@ -1,6 +1,6 @@
 import React from 'react';
 import './Demarche.scss';
-import demarche from './../../assets/img/demarche_pic.png';
+import demarche from './../../assets/img/demarche_new_pic.png';
 import LogoBlue from '../../assets/img/logo_agexis.jpg';
 import { ReactComponent as CadreUp } from '../../assets/icons/cadre_up.svg';
 

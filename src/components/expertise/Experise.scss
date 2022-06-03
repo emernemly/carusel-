@@ -182,3 +182,26 @@
     font-size: 15px;
   }
 }
+@media screen and (max-width: 450px) {
+  .container_expertise {
+    .discreption {
+      .title {
+        h2 {
+          text-align: center;
+          svg {
+            display: none;
+          }
+        }
+      }
+    }
+    .type-expetise {
+      .type {
+        .définition {
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
