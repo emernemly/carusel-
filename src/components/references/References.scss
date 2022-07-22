@@ -1,19 +1,27 @@
 .references {
-  height: 1213px;
   width: 100%;
-  background-image: url('./../../assets/img/batiment_infrastructure@3x.png');
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url('./../../assets/img/batiment_infrastructure@3x.png');
+  // background-position: right;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   overflow: hidden;
+  .ref_01 {
+    width: 100%;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    border-radius: 28px;
+    position: relative;
+  }
   .images {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     h2 {
-      color: #bc2431;
+      color: var(--clr-second);
       width: 70%;
-      margin: 4% 10%;
+      padding: 23px 4% !important;
       font-size: 40px;
       svg {
         width: 30px;
@@ -30,12 +38,15 @@
       overflow: visible !important ;
     }
     .rec-carousel-wrapper {
-      max-width: 650px;
+      max-width: 80%;
       margin: auto;
+    }
+    .rec-carousel-item {
+      transform: skewX(10deg);
+      margin: 10px;
     }
     .rec-carousel-item-hidden {
       img {
-        width: 550px !important;
         transition-duration: 0.5s;
       }
 
@@ -45,14 +56,14 @@
     }
 
     .rec-carousel-item-next {
-      transform: translateX(-25%) scale(0.8) !important;
+      transform: translateX(-62%) skewX(10deg) scale(0.8) !important;
       opacity: 0.5;
       z-index: 0;
     }
     .rec-carousel-item-prev {
       opacity: 0.5;
       z-index: 0;
-      transform: translateX(25%) scale(0.8) !important;
+      transform: translateX(62%) skewX(10deg) scale(0.8) !important;
     }
     .rec-arrow {
       z-index: 10;
@@ -61,55 +72,35 @@
     }
     .rec-carousel-item-visible {
       position: relative;
-      width: 100%;
+
       z-index: 10;
-      border-radius: 150px;
+
       transition-duration: 0.5s;
       img {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
       }
     }
     .rec-item-wrapper {
-      border-radius: 33px;
     }
     img {
-      width: 550px !important;
+      width: 350px !important;
       height: 315px;
       pointer-events: none;
-      border-radius: 47px;
-    }
-    .reférence_b {
-      position: relative;
-      .adress {
-        display: flex;
-        flex-direction: column;
-        margin-left: 35px;
-        transform: translateY(-150%);
-        z-index: 20;
-        color: white;
-        position: absolute;
-        button {
-          height: 39px;
-          width: 163px;
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          align-items: center;
-          margin-top: 9px;
-        }
-      }
     }
   }
   .references-contant {
+    background-image: url('./../../assets/img/batiment_infrastructure@3x.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    margin: 5% 10%;
-    width: 35%;
+    padding-top: 20px;
     .title {
-      margin-bottom: 32px;
+      margin-bottom: 17px;
       h3 {
-        color: #bc2431;
+        color: var(--clr-second);
         font-size: 40px;
         svg {
           width: 30px;
@@ -118,11 +109,13 @@
       }
       h4 {
         font-size: 27px;
+        color: #26304e;
       }
     }
     p {
       color: #615e5e;
       font-size: 23px;
+      width: 50%;
     }
   }
 }
@@ -142,9 +135,8 @@
     h2 {
       display: flex;
       justify-content: center;
-      color: #bc2431;
+      color: var(--clr-second);
       width: 70%;
-      margin: 8%;
       font-size: 40px;
     }
   }
@@ -179,18 +171,61 @@
     }
   }
 }
-@media screen and (max-width: 350px) {
+// @media screen and (min-width: 450px) {
+//   .references {
+//     .images {
+//       h2 {
+//         font-size: 37px !important;
+//         padding: 19px;
+//       }
+//       .reférence_b {
+//         .adress {
+//           align-items: center;
+//         }
+//       }
+//     }
+//     .references-contant {
+//       p {
+//         font-size: 18px;
+//       }
+//       .title {
+//         h3 {
+//           font-size: 33px;
+//         }
+//         h4 {
+//           font-size: 19px;
+//           text-align: center;
+//           margin: 12px;
+//         }
+//       }
+//     }
+//   }
+// }
+@media screen and (max-width: 450px) {
   .references {
+    .images {
+      h2 {
+        font-size: 37px !important;
+        padding: 19px;
+      }
+      .reférence_b {
+        .adress {
+          align-items: center;
+        }
+      }
+    }
     .references-contant {
       p {
         font-size: 18px;
       }
       .title {
         h3 {
-          font-size: 33px;
+          font-size: 37px;
         }
         h4 {
-          font-size: 23px;
+          font-size: 19px;
+          text-align: center;
+          margin: 12px;
         }
       }
     }

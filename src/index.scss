@@ -4,6 +4,12 @@
   font-family: 'nexa_bold';
   src: local('nexa_bold'), url(./assets/fonts/Nexa-Bold.woff) format('woff');
 }
+:root {
+  --clr-second: #bb2431;
+  --clr-primary: #1c2c4e;
+  --txt-title: clamp(30px, 3vw, 100px);
+  --pdg-box: 0px 4%;
+}
 body {
   // overflow: overlay;
   font-family: 'nexa_bold' !important;
@@ -18,6 +24,9 @@ h4 {
   margin-bottom: 0px !important;
   display: flex;
   align-items: center;
+}
+p {
+  font-size: 20px;
 }
 input {
   outline: none;
@@ -34,18 +43,19 @@ button:active {
   opacity: 0.7;
 }
 .primary-btn {
-  background-color: #1c2c4e;
+  background-color: var(--clr-primary);
   color: white;
   font-size: 20px;
   padding: 10px 19px;
   border-radius: 10px;
 }
 .second-btn {
-  background-color: #bb2431;
+  background-color: var(--clr-second);
   color: white;
-  font-size: 20px;
+  font-size: clamp(14px, 20px, 20px);
   padding: 10px 19px;
   border-radius: 10px;
+  font-size: clamp(16px, 3vw, 32px);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -70,4 +80,34 @@ button:active {
 //fixing footer
 .content-app {
   min-height: 100vh;
+  overflow: hidden;
+}
+// .content-app {
+//
+// }
+.tsize {
+  h2 {
+    font-size: 40px;
+  }
+}
+._container {
+  padding: 25px 0;
+}
+.rec-dot_active {
+  background-color: var(--clr-primary) !important;
+  box-shadow: 0 0 1px 3px var(--clr-primary) !important;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1520px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 30px !important;
+  }
+  p {
+    font-size: 18px !important;
+  }
 }

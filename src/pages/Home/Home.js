@@ -1,5 +1,7 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Actualites from '../../components/actualités/Actualites';
+import Chiffres from '../../components/Chiffres/Chiffres';
 //import { useDispatch } from 'react-redux';
 import Coditions from '../../components/Coditions-technique/Coditions';
 import Demarche from '../../components/demarche/Demarche';
@@ -23,12 +25,16 @@ const Home = () => {
   // };
   return (
     <div className='home'>
+      <Helmet>
+        <title>Agexis</title>
+      </Helmet>
       <Slider />
-      <Coditions />
+
       <Expertise />
       <Demarche />
       <Domaines />
-      <References />
+      <Chiffres />
+
       <Actualites />
       <Devis />
       <Partner />

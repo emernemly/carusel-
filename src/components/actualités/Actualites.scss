@@ -3,6 +3,7 @@
   margin-bottom: 50px;
   width: 100%;
   flex-wrap: wrap;
+
   .rec-arrow:hover,
   .rec-arrow:focus {
     background: #d5d5d5 !important;
@@ -43,14 +44,15 @@
         svg {
           display: inline;
           width: 33px;
+          margin: auto;
         }
       }
       a {
         text-decoration: none;
-        color: #232d49;
+        color: var(--clr-primary);
       }
       a:hover {
-        color: #bb2431;
+        color: var(--clr-second);
       }
     }
     .card-body {
@@ -71,11 +73,10 @@
 .subtitle {
   width: 100%;
   margin-top: 30px;
-  h3 {
+  h2 {
     color: #bc2431;
     text-align: center;
-    margin-left: 14%;
-    font-size: 35px;
+
     padding-bottom: 22px;
     svg {
       width: 30px;

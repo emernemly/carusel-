@@ -5,7 +5,7 @@ import presentation_pic_b from './../../../assets/img/presentation_pic_b_1.png';
 const Presentation = () => {
   return (
     <div className='presentation'>
-      <div className='all-presentation'>
+      <div className='all-presentation container'>
         <div className='presentation-contant'>
           <div className='title'>
             {' '}

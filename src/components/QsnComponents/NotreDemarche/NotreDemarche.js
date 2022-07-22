@@ -4,7 +4,7 @@ import demarche_pic from './../../../assets/img/presentation_pic_c.png';
 const NotreDemarche = () => {
   return (
     <div className='NotreDemarche'>
-      <div className='NotreDemarche-contant'>
+      <div className='NotreDemarche-contant container'>
         <div className='contant'>
           <div className='description'>
             <h2> Notre démarche</h2>

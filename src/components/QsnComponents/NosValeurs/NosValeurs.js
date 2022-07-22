@@ -5,7 +5,7 @@ import demarche_pic_a from './../../../assets/img/demarche_pic_a_1.png';
 const NosValeurs = () => {
   return (
     <div className='NosValeurs'>
-      <div className='NosValeurs-contant'>
+      <div className='NosValeurs-contant container'>
         <div className='image'>
           <img src={valeur} alt='valeur' />
         </div>

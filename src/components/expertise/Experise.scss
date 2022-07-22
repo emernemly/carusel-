@@ -1,18 +1,17 @@
 .container_expertise {
   display: flex;
-  position: relative;
-  width: 100%;
-  margin-bottom: 55px;
-  padding: 0 40px;
-  align-items: center;
 
+  width: 100%;
+
+  align-items: center;
+  gap: 50px;
   .roue {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     position: absolute;
     z-index: -1;
-    max-width: 750px;
+    max-width: 680px;
   }
   .images {
     position: relative;
@@ -40,7 +39,7 @@
       display: flex;
       margin: 0 13%;
       img {
-        width: 370px;
+        max-width: 347px;
         margin-top: -45px;
         border-radius: 30px;
       }
@@ -54,9 +53,8 @@
     .title {
       margin-bottom: 17px;
       h2 {
-        color: #bc2331;
+        color: var(--clr-second);
 
-        font-size: 50px;
         svg {
           width: 30px;
           transform: translateY(-35%);
@@ -82,7 +80,8 @@
 
       .définition {
         p {
-          margin: 20px 0;
+          margin: 8px 0;
+          font-size: 18px;
           color: #afafaf;
         }
       }
@@ -92,7 +91,7 @@
 .Num {
   width: 120px;
   height: 130px;
-  background-color: #1c2c4e;
+  background-color: var(--clr-primary);
   color: white;
   border-radius: 10px;
   display: flex;
@@ -170,7 +169,7 @@
   .Num {
     width: 95px;
     height: 110px;
-    background-color: #1c2c4e;
+    background-color: var(--clr-primary);
     color: white;
     border-radius: 10px;
     display: flex;
@@ -187,11 +186,15 @@
     .discreption {
       .title {
         h2 {
+          font-size: 37px;
           text-align: center;
           svg {
             display: none;
           }
         }
+      }
+      p {
+        font-size: 15px;
       }
     }
     .type-expetise {

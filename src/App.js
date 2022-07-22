@@ -3,6 +3,8 @@ import './App.css';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import _Nav from './components/Header/_Nav';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 // import Register from './pages/Register/Register';
 // import Login from './pages/Login/Login';
 import { useSelector } from 'react-redux';
@@ -27,6 +29,8 @@ import { useSelector } from 'react-redux';
 
 import Footer from './components/Footer/Footer';
 import Qsn from './pages/Qsn/Qsn';
+import ScrollUp from './components/ScrollUp/ScrollUp';
+
 function App() {
   const TokenReducer = useSelector((state) => state.TokenReducer);
 
@@ -37,6 +41,7 @@ function App() {
   return (
     <div className='App'>
       <_Nav />
+      <ScrollUp />
 
       <div className='content-app'>
         <Routes>
@@ -85,10 +90,9 @@ function App() {
           <Route path='/demarche-RSE' element={VerifAuth(<RSE />)} />
           <Route path='/demarche-RGE' element={VerifAuth(<RGE />)} />
           <Route path='/BIM' element={VerifAuth(<BIM />)} /> */}
-        </Routes>
+        </Routes>{' '}
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   );
 }

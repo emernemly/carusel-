@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Actualites.scss';
 import CardActualites from './CardActualites';
 import actualité_pic_a from './../../assets/img/actualité_pic_a.png';
@@ -6,6 +6,7 @@ import actualité_pic_b from './../../assets/img/actualité_pic_b.png';
 import actualité_pic_c from './../../assets/img/actualité_pic_c.png';
 import { ReactComponent as CadreUp } from '../../assets/icons/cadre_up.svg';
 import Carousel from 'react-elastic-carousel';
+import Aos from 'aos';
 const Actualites = () => {
   const data = [
     {
@@ -34,27 +35,53 @@ const Actualites = () => {
 
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 900, itemsToShow: 2 },
-    { width: 1200, itemsToShow: 3 },
+    { width: 600, itemsToShow: 2 },
+    { width: 1000, itemsToShow: 3 },
   ];
+  //show pagination
+  const [windowDimenion, setdetectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  });
+
+  const detectSize = () => {
+    setdetectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', detectSize);
+
+    return () => {
+      window.removeEventListener('resize', detectSize);
+    };
+  }, [windowDimenion]);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div className='actualites'>
-      <div className='subtitle'>
-        {' '}
-        <h3>
-          Actualités <CadreUp />
-        </h3>
+    <div className='_container'>
+      {' '}
+      <div className='actualites container' data-aos='fade-up'>
+        <div className='subtitle tsize'>
+          {' '}
+          <h2>
+            Actualités <CadreUp />
+          </h2>
+        </div>
+        <Carousel
+          breakPoints={breakPoints}
+          showArrows={windowDimenion.winWidth < 1013 ? false : true}
+          pagination={windowDimenion.winWidth < 1013 ? true : false}
+          itemsToShow={3}
+        >
+          {data.map((el, i) => (
+            <CardActualites key={i} el={el} />
+          ))}
+        </Carousel>
       </div>
-      <Carousel
-        breakPoints={breakPoints}
-        showArrows={true}
-        pagination={false}
-        itemsToShow={3}
-      >
-        {data.map((el, i) => (
-          <CardActualites key={i} el={el} />
-        ))}
-      </Carousel>
     </div>
   );
 };

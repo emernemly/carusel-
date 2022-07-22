@@ -23,11 +23,11 @@
     padding-left: 71px;
     .description {
       h2 {
-        color: #bb2431;
-        font-size: 50px;
+        color: var(--clr-second);
+        font-size: var(--txt-title) !important ;
         padding-bottom: 10px;
       }
-      width: 60%;
+
       p {
         font-size: 20px;
         display: block;
@@ -38,6 +38,91 @@
       margin-top: 30px;
       width: 573px;
       pointer-events: none;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .NosValeurs {
+    width: 100% !important;
+    .NosValeurs-contant {
+      width: 100%;
+      flex-direction: column-reverse;
+
+      .image {
+        width: 100% !important;
+        padding-top: 52px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .valeur-description {
+      margin: 0 0 0 3%;
+      width: 100% !important;
+      .description {
+        width: 100%;
+
+        p {
+          font-size: 15px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  /*Big smartphones [426px -> 600px]*/
+  .NosValeurs {
+    width: 100% !important;
+    .NosValeurs-contant {
+      width: 100%;
+      flex-direction: column-reverse;
+
+      .image {
+        width: 100% !important;
+        padding-top: 52px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .valeur-description {
+      padding-left: 1%;
+      width: 100% !important;
+      .description {
+        width: 100%;
+
+        p {
+          font-size: 18px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1273px) {
+  .NosValeurs {
+    width: 100%;
+    .NosValeurs-contant {
+      width: 100%;
+      .image {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .valeur-description {
+      width: 50%;
+      img {
+        width: 100%;
+      }
     }
   }
 }

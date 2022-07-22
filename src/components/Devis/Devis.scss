@@ -1,6 +1,6 @@
 .Devis {
   clip-path: polygon(0 0, 100% 21%, 100% 100%, 0% 100%);
-  background-color: #232d49;
+  background-color: var(--clr-primary);
 
   width: 100%;
   height: 550px;
@@ -125,6 +125,17 @@
         }
         button {
           margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 283px) {
+  .Devis {
+    div {
+      .discription {
+        h3 {
+          font-size: 43px;
         }
       }
     }

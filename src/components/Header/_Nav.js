@@ -60,14 +60,30 @@ function _Nav() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <div className=' sidebar-items'>
-              <NavLink to='/'>Accueil</NavLink>
-              <NavLink to='/qsn'>Qui sommes-nous</NavLink>
-              <NavLink to='/activite'>Activité</NavLink>
-              <NavLink to='/marche'>Marché</NavLink>
-              <NavLink to='/acualite'>Actualité</NavLink>
-              <NavLink to='/carriere'>Carriére</NavLink>
-              <NavLink to='/contact'>Contact</NavLink>
-              <NavLink to='/demarche'>Démarche</NavLink>
+              <NavLink to='/' onClick={handleClose}>
+                Accueil
+              </NavLink>
+              <NavLink to='/qsn' onClick={handleClose}>
+                Qui sommes-nous
+              </NavLink>
+              <NavLink to='/activite' onClick={handleClose}>
+                Activité
+              </NavLink>
+              <NavLink to='/marche' onClick={handleClose}>
+                Marché
+              </NavLink>
+              <NavLink to='/acualite' onClick={handleClose}>
+                Actualité
+              </NavLink>
+              <NavLink to='/carriere' onClick={handleClose}>
+                Carriére
+              </NavLink>
+              <NavLink to='/contact' onClick={handleClose}>
+                Contact
+              </NavLink>
+              <NavLink to='/demarche' onClick={handleClose}>
+                Démarche
+              </NavLink>
             </div>
           </Offcanvas.Body>
         </Offcanvas>

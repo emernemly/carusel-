@@ -2,7 +2,7 @@ footer {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: #232d49;
+  background-color: var(--clr-primary);
   bottom: 0;
   height: 400px;
   position: relative;
@@ -53,8 +53,7 @@ footer {
       a:hover {
         transition-duration: 0.5s;
         transform: translateX(10px);
-        color: #bb2431;
-        color: #bb2431;
+        color: var(--clr-second);
       }
     }
 
@@ -166,7 +165,16 @@ footer::after {
       margin-top: 51px;
     }
     .links {
-      width: 43%;
+      width: 100%;
+    }
+    .contact {
+      width: 100%;
+      .contact_1 {
+        width: 100%;
+      }
+    }
+    .footer-1 {
+      width: 100%;
     }
   }
 }

@@ -9,7 +9,7 @@
   margin: auto;
   border-radius: 10px;
   font-size: 17px;
-  transform: translateY(35%);
+  transform: translateY(35%) !important;
   svg {
     width: 60px;
     margin: 12px;
@@ -49,6 +49,18 @@
       text-align: center;
       justify-content: flex-start;
       margin: 10px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .coordonnées {
+    .coordonnée {
+      .donnée {
+        width: 60%;
+        p {
+          font-size: 15px;
+        }
+      }
     }
   }
 }

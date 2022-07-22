@@ -9,7 +9,7 @@
 .header-nav {
   width: 100%;
   justify-content: center;
-  background-color: #1c2c4e;
+  background-color: var(--clr-primary);
   align-items: center;
   height: 80px;
   display: flex;
@@ -49,7 +49,7 @@
 }
 
 .container-fluid {
-  background-color: #1c2c4e;
+  background-color: var(--clr-primary);
 }
 
 .header-top {

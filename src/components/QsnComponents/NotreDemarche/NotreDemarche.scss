@@ -3,7 +3,6 @@
   display: flex;
   background-color: rgba(221, 224, 229, 0.2);
   .NotreDemarche-contant {
-    padding: 30px 0;
     display: flex;
     align-items: center;
 
@@ -11,16 +10,15 @@
       width: 50%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      margin: 0 0 0 5;
+
       .description {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 70%;
         h2 {
-          color: #bb2431;
-          font-size: 50px;
+          color: var(--clr-second);
+          font-size: var(--txt-title) !important ;
           padding-bottom: 10px;
         }
         p {
@@ -50,3 +48,81 @@
     }
   }
 }
+@media screen and (max-width: 425px) {
+  .NotreDemarche {
+    width: 100%;
+    .NotreDemarche-contant {
+      flex-direction: column;
+      width: 100%;
+      .contant {
+        width: 100%;
+        align-items: flex-start;
+        padding: 1%;
+        margin: 0 0 0 5%;
+        .description {
+          width: 100%;
+          h2 {
+            font-size: var(--txt-title) !important ;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        ul {
+          width: 100%;
+        }
+      }
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  /*Big smartphones [426px -> 600px]*/
+  .NotreDemarche {
+    width: 100%;
+    .NotreDemarche-contant {
+      flex-direction: column;
+      width: 100%;
+      .contant {
+        width: 100%;
+        align-items: flex-start;
+        padding: 1%;
+        .description {
+          width: 100%;
+
+          p {
+            font-size: 18px;
+          }
+        }
+        ul {
+          width: 100%;
+        }
+      }
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1273px) {
+  .NotreDemarche {
+    width: 100%;
+    .NotreDemarche-contant {
+      width: 100%;
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/*Tablets [601px -> 1200px]*/

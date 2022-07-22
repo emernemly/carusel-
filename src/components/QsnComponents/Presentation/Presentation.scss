@@ -1,7 +1,7 @@
 .presentation {
   background-color: rgb(221 224 229 / 20%);
   display: flex;
-  padding: 91px 0;
+  padding: 50px 0;
   overflow: hidden;
   justify-content: center;
   .all-presentation {
@@ -13,17 +13,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 0 0 5%;
+
       .title {
         width: 70%;
         margin-bottom: 12px;
         h2 {
-          font-size: 50px;
-          color: #bb2431;
+          font-size: var(--txt-title) !important ;
+          color: var(--clr-second);
           padding-bottom: 10px;
         }
         h4 {
-          color: #bb2431;
+          color: var(--clr-second);
         }
       }
       .paragraphe {
@@ -70,6 +70,113 @@
           img {
             width: 550px;
             pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .presentation {
+    width: 100%;
+    .all-presentation {
+      flex-direction: column;
+      width: 100%;
+      .presentation-contant {
+        margin: 0 0 0 1%;
+        width: 100%;
+        .paragraphe {
+          width: 90%;
+          font-size: 15px;
+        }
+        .title {
+          width: 100%;
+
+          h4 {
+            font-size: 16px;
+          }
+        }
+        ul {
+          font-size: 15px;
+          width: 90%;
+        }
+      }
+      .images {
+        width: 100%;
+        .b {
+          img {
+            width: 100%;
+          }
+          .a {
+            img {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  /*Big smartphones [426px -> 600px]*/
+  .presentation {
+    width: 100%;
+    .all-presentation {
+      flex-direction: column;
+      width: 100%;
+      .presentation-contant {
+        margin: 0 0 0 5%;
+        width: 100%;
+        .paragraphe {
+          width: 90%;
+          font-size: 18px;
+        }
+        .title {
+          width: 100%;
+          h2 {
+            font-size: var(--txt-title) !important ;
+          }
+          h4 {
+            font-size: 20px;
+          }
+        }
+        ul {
+          font-size: 20px;
+          width: 90%;
+        }
+      }
+      .images {
+        width: 100%;
+        .b {
+          img {
+            width: 100%;
+          }
+          .a {
+            img {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1273px) {
+  /*Tablets [601px -> 1200px]*/
+  .presentation {
+    .all-presentation {
+      width: 100%;
+      .images {
+        .b {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+          .a {
+            width: 100%;
+            img {
+              width: 79%;
+            }
           }
         }
       }

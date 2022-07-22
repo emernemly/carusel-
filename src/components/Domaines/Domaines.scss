@@ -7,7 +7,7 @@
   box-shadow: 14px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
   border-radius: 15px !important;
   margin-bottom: 30px;
-  height: 639px;
+  height: 586px;
   .card-body {
     display: flex;
     flex-direction: column;
@@ -41,6 +41,7 @@
 
 .all_carousel {
   margin-bottom: 50px;
+
   .rec-arrow:hover,
   .rec-arrow:focus {
     background: #d5d5d5 !important;
@@ -54,12 +55,10 @@
   .title {
     h2 {
       display: flex;
-      color: #bc2431;
-      text-align: center;
-      margin-left: 13%;
+      color: var(--clr-second);
+
       height: 150px;
 
-      font-size: 35px;
       padding-bottom: 22px;
     }
     .svg {
@@ -96,6 +95,7 @@
       text-align: start;
       justify-content: flex-start;
       h2 {
+        font-size: 37px;
         margin: 0 0 0 12px;
       }
 
@@ -112,6 +112,13 @@
   .domaine {
     width: 195px !important;
     height: 447px;
+    .card-body {
+      .card-title {
+        h4 {
+          font-size: 17px;
+        }
+      }
+    }
     .card-text {
       font-size: 12px;
     }
@@ -130,6 +137,7 @@
     }
   }
 }
+
 // .rec-arrow:disabled,
 // .rec-arrow[disabled] {
 //   display: none;

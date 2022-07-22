@@ -1,29 +1,30 @@
 .demarche {
-  background-color: rgb(221 224 229 / 20%);
-  height: 800px;
-  padding: 91px 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin-bottom: 60px;
+    color: var(--clr-second);
+    h2 {
+      transform: translateX(-145px);
+      svg {
+        width: 30px;
+        transform: translateY(-35%);
+      }
+    }
+  }
   .all-demarche {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 7px;
   }
   .left-demarche {
     width: 50%;
     display: flex;
     flex-direction: column;
 
-    .title {
-      margin-bottom: 60px;
-      color: #bc2331;
-      h3 {
-        font-size: 45px;
-        svg {
-          width: 30px;
-          transform: translateY(-35%);
-        }
-      }
-    }
     .demarche-contant {
       max-width: 500px;
       padding-left: 30px;
@@ -31,7 +32,6 @@
       flex-direction: column;
       border-left: 1px solid rgb(154, 153, 153);
       p {
-        margin: 22px 0;
         color: #4a4848;
       }
       ul {
@@ -46,11 +46,13 @@
   }
 
   .demarche-image {
-    width: 450px;
+    max-width: 450px;
     position: relative;
-
+    img:first-child {
+      border-radius: 30px;
+    }
     img {
-      width: 450px;
+      width: 100%;
     }
     .date {
       background-color: rgb(76, 75, 75);
@@ -60,8 +62,8 @@
       justify-content: center;
       width: 115px;
       height: 30px;
-      text-align: center;
-      transform: translateY(-35px);
+      top: -13px;
+      position: absolute;
     }
     .demarche-description {
       opacity: 0.723;
@@ -73,11 +75,14 @@
       justify-content: center;
       align-items: center;
       border-radius: 25px;
-      margin-left: 26px;
+
       position: absolute;
-      transform: translateY(-106%);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 24px;
 
       p {
+        font-size: large;
         color: #4a4848;
         margin: 15px;
       }
@@ -91,7 +96,6 @@
   .demarche {
     display: flex;
     background-color: rgba(221, 224, 229, 0.2);
-    padding: 91px 0;
     height: max-content;
     .all-demarche {
       display: flex;
@@ -104,7 +108,6 @@
         display: flex;
         flex-direction: column;
         padding: 14% 74px;
-        align-items: center;
         padding: 14% 21px;
         .demarche-contant {
           padding-left: 30px;
@@ -115,59 +118,98 @@
         }
       }
     }
+    .title {
+      h2 {
+        transform: translateX(0);
+      }
+    }
   }
 }
-@media screen and (max-width: 638px) {
+// @media screen and (max-width: 638px) {
+//   .demarche {
+//     .all-demarche {
+//       display: flex;
+//       flex-direction: column-reverse;
+//       /* justify-content: center; */
+//       align-items: center;
+//     }
+//     .demarche-image {
+//       width: auto;
+//     }
+//   }
+// }
+// @media screen and (max-width: 447px) {
+//   .demarche {
+//     .all-demarche {
+//       img {
+//         width: 100%;
+//       }
+//       .demarche-description {
+//         width: 90%;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 379px) {
+//   .demarche {
+//     .demarche-image {
+//       .date {
+//         transform: translateY(-19px);
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 281px) {
+//   .demarche {
+//     .all-demarche {
+//       .demarche-description {
+//         p {
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 425px) {
   .demarche {
     .all-demarche {
       display: flex;
       flex-direction: column-reverse;
-      /* justify-content: center; */
+      height: max-content;
+      margin: 10px;
+      width: 100%;
+      justify-content: center;
       align-items: center;
-    }
-    .demarche-image {
-      width: auto;
-    }
-  }
-}
-@media screen and (max-width: 447px) {
-  .demarche {
-    .all-demarche {
-      img {
-        width: 100%;
-      }
-      .demarche-description {
-        width: 90%;
-      }
-    }
-  }
-}
-@media screen and (max-width: 379px) {
-  .demarche {
-    .demarche-image {
-      .date {
-        transform: translateY(-19px);
-      }
-    }
-  }
-}
-@media screen and (max-width: 281px) {
-  .demarche {
-    .all-demarche {
-      .demarche-description {
-        p {
-          font-size: 12px;
+      .demarche-image {
+        .demarche-description {
+          width: 85%;
+          p {
+            font-size: 13px !important;
+          }
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .demarche {
     .left-demarche {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start !important;
+      margin-top: 22px;
+
+      .demarche-contant {
+        ul {
+          li {
+            transform: translateX(-14px);
+          }
+        }
+        p {
+          font-size: 15px;
+        }
+      }
       .title {
         h3 {
+          font-size: 37px;
           text-align: center;
           svg {
             display: none;
@@ -175,11 +217,13 @@
         }
       }
     }
-    .all-demarche {
-      .demarche-description {
-        p {
-          font-size: 15px;
-        }
+  }
+}
+@media screen and (max-width: 1464px) {
+  .demarche {
+    .title {
+      h2 {
+        transform: translateX(0);
       }
     }
   }
